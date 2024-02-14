@@ -5,6 +5,7 @@ import { logo } from "../utils/constants";
 import SearchBar from "./SearchBar";
 
 const Navbar = () => (
+    // Stack is a container component for arranging elements vertically or horizontally
   <Stack
     direction={"row"}
     alignItems={"center"}
@@ -16,6 +17,7 @@ const Navbar = () => (
       justifyContent: "space-between",
     }}
   >
+    {/* Link container that routes to the "/" home route */}
     <Link to={"/"} style={{ display: 'flex', alignItems: 'center'}}>
         <img src={logo} alt="logo" height={45} />
     </Link>
