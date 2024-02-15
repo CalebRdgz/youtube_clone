@@ -15,7 +15,7 @@ const Videos = ({ videos, direction }) => {
               {/* if the current item has an id that points to a videoId, render the VideoCard component */}
               {item.id.videoId && <VideoCard video={item} />}
               {/* if the current item has an id that points to a channelId, render the ChannelCard component */}
-              {item.id.channelId && <ChannelCard channelDetail={item} marginTop={undefined} />}
+              {item.id.channelId && <ChannelCard channelDetail={item} marginTop={0} />}
             </Box>
         ))}
     </Stack>

@@ -17,7 +17,7 @@ const Feed = () => {
   }, [selectedCategory]) //provide the dependency array and leave it empty at first meaning code only runs when page reloads
 
   return (
-    <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
+    <Stack sx={{ flexDirection: { sx: "column", md: "row" }}}>
       {/* The Box component is a generic, theme-aware container with access to CSS utilities from MUI System. */}
       <Box
         sx={{
@@ -37,7 +37,7 @@ const Feed = () => {
           Copyright 2024 Caleb Media
         </Typography>
       </Box>
-      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2, ml: '20px' }} minHeight={"100vh"}>
         <Typography
           variant="h4"
           fontWeight={"bold"}
@@ -47,7 +47,7 @@ const Feed = () => {
           {selectedCategory} <span style={{ color: "#F31503" }}>Videos</span>
         </Typography>
 
-        <Videos videos={videos} />
+        <Videos videos={videos} direction={undefined} />
       </Box>
     </Stack>
   );
