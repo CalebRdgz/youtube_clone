@@ -9,6 +9,7 @@ const ChannelDetail = () => {
   const [ChannelDetail, setChannelDetail] = useState(null);
   const [videos, setvideos] = useState([]);
 
+  //get the video id from the url
   const { id } = useParams();
 
   console.log(ChannelDetail, videos);
